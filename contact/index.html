@@ -10,11 +10,16 @@
             margin-inline: auto;
             padding: 1rem;
             font-size: 1rem;
+            font: inherit;
             line-height: 1.6;
             text-align: center
         }
         li {
-            display: contents
+            display: contents;
+            border-bottom-width : 0.4em;
+            border-bottom-color : oklch(80% 3% 200);
+            padding-bottom : 0.5em;
+            margin-bottom : 0.5em;
         }
         ul {
             display: contents
@@ -27,22 +32,30 @@
             padding : 0.5em;
             text-decoration: none;
             color: inherit;
-            border-bottom-width : 0.4em;
-            border-bottom-color : oklch(80% 3% 200);
-            padding-bottom : 0.5em;
-            margin-bottom : 0.5em;
-        }
-        nav a.current {
             border-bottom-width : 1px; 
             border-bottom-style : solid;
             border-bottom-color : oklch(80% 3% 200)
         }
-        nav a.hover {
-            border-bottom-width : 1px; 
+        a.current {
+            border-bottom-width : 4px; 
+            border-bottom-style : solid;
+            border-bottom-color : oklch(80% 3% 200)
+        }
+        a:hover {
+            border-bottom-width : 4px; 
             border-bottom-style : solid;
             accent-color: oklch(70% 0.1373 187.41);
             border-bottom-color : oklch(70% 0.1373 187.41)
-
+        }
+        form {
+            display: block;
+            width: 100%;
+            box-sizing: border-box
+        }
+        labels {
+            display: block;
+            box-sizing: border-box;
+            margin-block : 1em
         }
     </style>
 </head>
@@ -57,7 +70,7 @@
                 target="_blank">GitHub Profile</a></li>
         </ul>
     </nav>
-    <form action="mailto:foo@example.com" method="POST" enctype="text/plain"></form>
+    <form action="mailto:filinanurcahya0000@gmail.com" method="POST" enctype="text/plain"></form>
         <label for="email">Your Email:</label>
         <input id="email" name="email" type="email" required><br><br>
 
