@@ -13,7 +13,6 @@
             padding: 1rem;
             font-size: 1rem;
             line-height: 1.6;
-            accent-color: oklch(70% 0.1373 187.41);
             text-align: center
         }
         li {
@@ -41,12 +40,18 @@
             border-bottom-style : solid;
             border-bottom-color : oklch(80% 3% 200)
         }
-}
+        nav a.hover {
+            border-bottom-width : 1px; 
+            border-bottom-style : solid;
+            accent-color: oklch(70% 0.1373 187.41);
+            border-bottom-color : oklch(70% 0.1373 187.41)
+
+        }
     </style>
 </head>
 <body>
     <a class="current">
-    <nav></nav>
+    <nav>
         <ul>
             <li><a href="https://filinanurcahya0000.github.io/DSC209R-Portfolio/projects/index.html">Projects</a></li>
             <li><a href="https://filinanurcahya0000.github.io/DSC209R-Portfolio/contact/index.html">Contact</a></li>
@@ -55,6 +60,7 @@
             <li><a href="https://github.com/filinanurcahya0000/DSC209R-Portfolio" 
                 target="_blank">GitHub Profile</a></li>
         </ul>
+    </nav>
     </a>
     <h1> Filina Nurcahya-Tjoa </h1>
     <p> Hi, current data science graduate student at UC San Diego 
