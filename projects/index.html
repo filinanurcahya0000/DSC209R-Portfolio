@@ -42,6 +42,17 @@
             accent-color: oklch(70% 0.1373 187.41);
             border-bottom-color : oklch(70% 0.1373 187.41)
         }
+        .projects {
+            display: grid;
+            grid-template-columns : repeat(auto-fill, minmax(15em, 1fr))
+        }
+        article {
+            grid-template-rows : subgrid;
+            grid-row: span 3;
+        }
+        h2 {
+            margin: 0
+        }
     </style>
 </head>
 <body>
