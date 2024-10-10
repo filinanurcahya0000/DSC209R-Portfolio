@@ -4,6 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <style>
+        body {
+            max-width: 100ch;
+            margin-inline: auto;
+            padding: 1rem;
+            font-size: 1rem;
+            line-height: 1.6;
+            text-align: center
+        }
+        li {
+            display: contents;
+        }
+        ul {
+            display: contents;
+        }
+        nav {
+            display: flex;
+            border-bottom-width : 1px; 
+            border-bottom-style : solid;
+            border-bottom-color : oklch(80% 3% 200)
+        }
+        a {
+            flex : 1;
+            padding : 0.5em;
+            text-decoration: none;
+            color: inherit;
+        }
+        a.current {
+            border-bottom-width : 5px; 
+            border-bottom-style : solid;
+            border-bottom-color : oklch(80% 3% 200)
+        }
+        a:hover {
+            border-bottom-width : 5px; 
+            border-bottom-style : solid;
+            accent-color: oklch(70% 0.1373 187.41);
+            border-bottom-color : oklch(70% 0.1373 187.41)
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -16,7 +55,7 @@
         </ul>
     </nav>
     <h1> This is my projects page! </h1> 
-    
+
     <div class="projects">
         <article>
             <h2>Lorem ipsum dolor sit.</h2>
