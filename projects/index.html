@@ -43,17 +43,18 @@
             border-bottom-color : oklch(70% 0.1373 187.41)
         }
         .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-            grid-gap: 1rem; 
+            display: flex;
+            gap: 1rem; 
+            justify-content: space-between;
+            overflow-x: auto; 
         }
         article {
-            grid-template-rows: subgrid;
-            grid-row: span 3;
+            flex: 0 0 auto;
+            width: 15em; 
         }
         img {
             display: block;
-            width: 100%; 
+            width: 100%;
             height: auto;
         }
         h2 {
