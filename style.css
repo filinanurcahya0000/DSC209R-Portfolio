@@ -1,6 +1,30 @@
+html {
+  color-scheme: light dark; /* Allows the site to adapt to light or dark mode */
+}
+
+/* Light mode styles */
 body {
-    /* Set line height to 1.5 times the font size
-         and use the OS’s UI font as the website font
-       */
-    font: 100%/1.5 system-ui;
+  /* Set line height to 1.5 times the font size and use the OS’s UI font as the website font */
+  font: 100%/1.5 system-ui;
+  background-color: white; /* Default light mode background */
+  color: black; /* Default light mode text color */
+}
+
+nav {
+  --border-color: oklch(50% 10% 200 / 40%);
+  background-color: #f8f9fa; /* Light mode background for nav */
+  color: black; /* Light mode text color for nav */
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: #121212; /* Dark background */
+      color: white; /* Light text color */
   }
+
+  nav {
+      background-color: #1e1e1e; /* Darker background for nav */
+      color: white; /* Light text color for nav */
+  }
+}

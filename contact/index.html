@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
     <style>
+        :root {
+            /* Define a CSS variable for the border color */
+            --border-color: oklch(50% 10% 200 / 40%);
+            color-scheme: light dark; /* Allow browser to switch between light and dark */
+        }
         body {
             max-width: 100ch;
             margin-inline: auto;
@@ -64,31 +69,23 @@
             width: 100%;
             box-sizing: border-box
         }
-    </style>
+       </style>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="https://filinanurcahya0000.github.io/DSC209R-Portfolio/projects/index.html">Projects</a></li>
-            <li><a href="https://filinanurcahya0000.github.io/DSC209R-Portfolio/index.html">Main Page</a></li>
-            <li><a class="current" href="https://filinanurcahya0000.github.io/DSC209R-Portfolio/contact/index.html">Contact Page</a></li>
-            <li><a href="https://filinanurcahya0000.github.io/DSC209R-Portfolio/resume/index.html">Resume</a></li>
-            <li><a href="https://github.com/filinanurcahya0000/DSC209R-Portfolio" 
-                target="_blank">GitHub Profile</a></li>
+            <li><a href="projects/index.html">Projects</a></li>
+            <li><a href="contact/index.html">Contact Page</a></li>
+            <li><a class="current" href="index.html">Main Page</a></li>
+            <li><a href="resume/index.html">Resume</a></li>
+            <li><a href="https://github.com/filinanurcahya0000/DSC209R-Portfolio" target="_blank">GitHub Profile</a></li>
         </ul>
     </nav>
-    <h1> This is my contact page! </h1>
-    <form action="mailto:filinanurcahya0000@gmail.com" method="POST" enctype="text/plain"></form>
-        <label for="email">Your Email:</label>
-        <input id="email" name="email" type="email" required><br><br>
-
-        <label for="subject">Subject:</label>
-        <input id="subject" name="subject" required><br><br>
-
-        <label for="body">Message:</label>
-        <textarea id="body" name="body" rows="5" cols="30" required></textarea><br><br>
-
-        <button>Submit</button>
-    </form>
+    <h1>Filina Nurcahya-Tjoa</h1>
+    <p>Hi, current data science graduate student at UC San Diego and big data engineer at AT&T.</p>
+    <img src='images/IMG_1638copy.jpg' alt='This is my favorite mushroom!' height="1000" width="1000">
+    <p>I currently live in Dallas, TX but what is the fun in that?</p>
+    
+    <script src="global.js"></script>
 </body>
 </html>
