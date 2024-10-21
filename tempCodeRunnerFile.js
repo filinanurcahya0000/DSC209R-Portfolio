@@ -20,6 +20,8 @@ currentLink?.classList.add("current");
 let pages = [
   { url: "", title: "Home" },
   { url: "projects/", title: "Projects" },
+  { url: "contact/", title: "Contact" },
+  { url: "resume/", title: "Resume" },
   // Add more pages here
 ];
 
