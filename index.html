@@ -21,29 +21,35 @@
             text-align: center;
             transition: background-color 0.3s, color 0.3s; /* Smooth transition */
         }
+
         li {
             display: contents;
         }
+
         ul {
             display: contents;
         }
+
         nav {
             display: flex;
             border-bottom-width: 1px; 
             border-bottom-style: solid;
             border-bottom-color: var(--border-color);
         }
+
         a {
             flex: 1;
             padding: 0.5em;
             text-decoration: none;
             color: inherit;
         }
+
         a.current {
             border-bottom-width: 5px; 
             border-bottom-style: solid;
             border-bottom-color: var(--border-color);
         }
+
         a:hover {
             border-bottom-width: 5px; 
             border-bottom-style: solid;
@@ -55,9 +61,28 @@
             background-color: black;
             color: white;
         }
+
+        /* Toggle button styles */
+        .toggle {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            z-index: 1000; /* Ensures the button is above other elements */
+        }
+
+        .toggle:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
+    <button class="toggle" onclick="toggleTheme()">Toggle Dark Mode</button>
     <nav>
         <ul>
             <li><a href="https://filinanurcahya0000.github.io/DSC209R-Portfolio/projects/index.html">Projects</a></li>
@@ -68,10 +93,17 @@
         </ul>
     </nav>
     <h1>Filina Nurcahya-Tjoa</h1>
-    <p>Hi, current data science graduate student at UC San Diego and big data engineer at AT&T.</p>
+    <p>Hi, I am a current data science graduate student at UC San Diego and a big data engineer at AT&T.</p>
     <img src='images/IMG_1638copy.jpg' alt='This is my favorite mushroom!' height="1000" width="1000">
-    <p>I currently live in Dallas, TX but what is the fun in that?</p>
+    <p>I currently live in Dallas, TX, but what is the fun in that?</p>
 
+    <script>
+        // Function to toggle between light and dark themes
+        function toggleTheme() {
+            const currentTheme = document.body.getAttribute('data-theme');
+            document.body.setAttribute('data-theme', currentTheme === 'dark' ? 'light' : 'dark');
+        }
+    </script>
     <script src="global.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
