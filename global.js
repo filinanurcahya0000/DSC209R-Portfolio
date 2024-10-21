@@ -8,7 +8,7 @@ function $$(selector, context = document) {
 // Create an array of page objects
 let pages = [
     { url: '', title: 'Home' },
-    { url: 'projects/', title: 'Projects' },
+    { url: 'projects/index.html', title: 'Projects' },
     { url: 'contact/index.html', title: 'Contact' },
     { url: 'resume/index.html', title: 'Resume' },
     { url: 'https://github.com/filinanurcahya0000/DSC209R-Portfolio', title: 'GitHub Profile' }

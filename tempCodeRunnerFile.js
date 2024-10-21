@@ -18,11 +18,11 @@ currentLink?.classList.add("current");
 
 // Step 3.1: Adding the navigation menu
 let pages = [
-  { url: "", title: "Home" },
-  { url: "projects/", title: "Projects" },
-  { url: "contact/", title: "Contact" },
-  { url: "resume/", title: "Resume" },
-  // Add more pages here
+  { url: '', title: 'Home' },
+  { url: 'projects/index.html', title: 'Projects' },
+  { url: 'contact/index.html', title: 'Contact' },
+  { url: 'resume/index.html', title: 'Resume' },
+  { url: 'https://github.com/filinanurcahya0000/DSC209R-Portfolio', title: 'GitHub Profile' }
 ];
 
 let nav = document.createElement("nav");
