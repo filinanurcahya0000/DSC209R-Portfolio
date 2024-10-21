@@ -1,6 +1,35 @@
+/* style.css */
+
+html {
+  color-scheme: light dark; /* Allow the site to adapt to light or dark mode */
+}
+
+nav {
+  --border-color: oklch(50% 10% 200 / 40%);
+}
+
 body {
-    /* Set line height to 1.5 times the font size
-         and use the OS’s UI font as the website font
-       */
-    font: 100%/1.5 system-ui;
-  }
+  /* Set line height to 1.5 times the font size
+     and use the OS’s UI font as the website font
+   */
+  font: 100%/1.5 system-ui;
+  background-color: white; /* Default light mode background */
+  color: black; /* Default light mode text color */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212; /* Dark mode background */
+  color: white; /* Dark mode text color */
+}
+
+nav {
+  border-bottom-width: 1px; 
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-color); /* Use the variable defined above */
+}
+
+/* Optional: Adjust hover background color */
+a:hover {
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
+}

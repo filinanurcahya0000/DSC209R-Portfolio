@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel = 'stylesheet' type = 'text/css' 
-    href = 'style.css'>
+    <link rel="stylesheet" type="text/css" href="../style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
@@ -17,78 +16,67 @@
         }
         li {
             display: contents;
-            border-bottom-width : 0.4em;
-            border-bottom-color : oklch(80% 3% 200);
-            padding-bottom : 0.5em;
-            margin-bottom : 0.5em;
+            border-bottom: 0.4em solid oklch(80% 3% 200);
+            padding-bottom: 0.5em;
+            margin-bottom: 0.5em;
         }
         ul {
-            display: contents
+            display: contents;
         }
         nav {
             display: flex;
-            border-bottom-width : 1px; 
-            border-bottom-style : solid;
-            border-bottom-color : oklch(80% 3% 200)
+            border-bottom: 1px solid oklch(80% 3% 200);
         }
         a {
-            flex : 1;
-            padding : 0.5em;
+            flex: 1;
+            padding: 0.5em;
             text-decoration: none;
             color: inherit;
             text-align: center;
         }
         a.current {
-            border-bottom-width : 4px; 
-            border-bottom-style : solid;
-            border-bottom-color : oklch(80% 3% 200)
+            border-bottom: 4px solid oklch(80% 3% 200);
         }
         a:hover {
-            border-bottom-width : 4px; 
-            border-bottom-style : solid;
-            accent-color: oklch(70% 0.1373 187.41);
-            border-bottom-color : oklch(70% 0.1373 187.41)
+            border-bottom: 4px solid oklch(70% 0.1373 187.41);
         }
-        input {
+        input, textarea {
             display: block;
             width: 100%;
-            box-sizing: border-box
+            box-sizing: border-box;
+            margin: 1em 0;
         }
         label {
             display: block;
-            box-sizing: border-box;
-            margin-block : 1em
-        }
-        textarea {
-            display: block;
-            width: 100%;
-            box-sizing: border-box
+            margin-block: 1em;
         }
     </style>
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="https://filinanurcahya0000.github.io/DSC209R-Portfolio/projects/index.html">Projects</a></li>
-            <li><a href="https://filinanurcahya0000.github.io/DSC209R-Portfolio/index.html">Main Page</a></li>
-            <li><a class="current" href="https://filinanurcahya0000.github.io/DSC209R-Portfolio/contact/index.html">Contact Page</a></li>
-            <li><a href="https://filinanurcahya0000.github.io/DSC209R-Portfolio/resume/index.html">Resume</a></li>
-            <li><a href="https://github.com/filinanurcahya0000/DSC209R-Portfolio" 
-                target="_blank">GitHub Profile</a></li>
-        </ul>
-    </nav>
-    <h1> This is my contact page! </h1>
-    <form action="mailto:filinanurcahya0000@gmail.com" method="POST" enctype="text/plain"></form>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../projects/index.html">Projects</a></li>
+                <li><a href="../resume/index.html">Resume</a></li>
+                <li><a class="current" href="index.html">Contact</a></li>
+                <li><a href="https://github.com/filinanurcahya0000/DSC209R-Portfolio" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+        
+        
+    <h1>This is my contact page!</h1>
+    <form action="mailto:filinanurcahya0000@gmail.com" method="POST" enctype="text/plain">
         <label for="email">Your Email:</label>
-        <input id="email" name="email" type="email" required><br><br>
-
+        <input id="email" name="email" type="email" required>
+        
         <label for="subject">Subject:</label>
-        <input id="subject" name="subject" required><br><br>
-
+        <input id="subject" name="subject" required>
+        
         <label for="body">Message:</label>
-        <textarea id="body" name="body" rows="5" cols="30" required></textarea><br><br>
-
-        <button>Submit</button>
+        <textarea id="body" name="body" rows="5" cols="30" required></textarea>
+        
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>

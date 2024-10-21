@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel = 'stylesheet' type = 'text/css' 
-    href = 'style.css'>
+    <link rel="stylesheet" type="text/css" href="../style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
@@ -13,6 +12,9 @@
             padding: 1rem;
             font-size: 1rem;
             line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
         }
         li {
             display: contents;
@@ -22,27 +24,27 @@
         }
         nav {
             display: flex;
-            border-bottom-width : 1px; 
-            border-bottom-style : solid;
-            border-bottom-color : oklch(80% 3% 200)
+            border-bottom-width: 1px; 
+            border-bottom-style: solid;
+            border-bottom-color: oklch(80% 3% 200);
         }
         a {
-            flex : 1;
-            padding : 0.5em;
+            flex: 1;
+            padding: 0.5em;
             text-decoration: none;
             color: inherit;
-            text-align: center
+            text-align: center;
         }
         a.current {
-            border-bottom-width : 5px; 
-            border-bottom-style : solid;
-            border-bottom-color : oklch(80% 3% 200)
+            border-bottom-width: 5px; 
+            border-bottom-style: solid;
+            border-bottom-color: oklch(80% 3% 200);
         }
         a:hover {
-            border-bottom-width : 5px; 
-            border-bottom-style : solid;
+            border-bottom-width: 5px; 
+            border-bottom-style: solid;
             accent-color: oklch(70% 0.1373 187.41);
-            border-bottom-color : oklch(70% 0.1373 187.41)
+            border-bottom-color: oklch(70% 0.1373 187.41);
         }
         .projects {
             display: grid;
@@ -70,15 +72,14 @@
 <body>
     <nav>
         <ul>
-            <li><a href="https://filinanurcahya0000.github.io/DSC209R-Portfolio/contact/index.html">Contact Page</a></li>
-            <li><a href="https://filinanurcahya0000.github.io/DSC209R-Portfolio/index.html">Main Page</a></li>
-            <li><a class="current" href="https://filinanurcahya0000.github.io/DSC209R-Portfolio/projects/index.html">Projects</a></li>
-            <li><a href="https://filinanurcahya0000.github.io/DSC209R-Portfolio/resume/index.html">Resume</a></li>
-            <li><a href="https://github.com/filinanurcahya0000/DSC209R-Portfolio" 
-                target="_blank">GitHub Profile</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a class="current" href="index.html">Projects</a></li>
+            <li><a href="../resume/index.html">Resume</a></li>
+            <li><a href="../contact/index.html">Contact</a></li>
+            <li><a href="https://github.com/filinanurcahya0000/DSC209R-Portfolio" target="_blank">GitHub</a></li>
         </ul>
-    </nav>
-    <h1> This is my projects page! </h1> 
+    </nav>    
+    <h1>This is my projects page!</h1> 
 
     <div class="projects">
         <article>
@@ -142,6 +143,5 @@
             <p>Id voluptatum nam et ratione hic eligendi in, cupiditate ipsam modi doloremque atque labore? Sapiente voluptate porro eius eum quod amet, beatae fugiat quae nulla ipsa consequuntur, ratione aperiam labore.</p>
         </article>
     </div>
-    
 </body>
 </html>
